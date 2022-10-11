@@ -1,0 +1,148 @@
+unit uPrincipal;
+
+interface
+
+uses
+    Winapi.Windows,
+    Winapi.Messages,
+    System.SysUtils,
+    System.Variants,
+    System.Classes,
+    Vcl.Graphics,
+    Vcl.Controls,
+    Vcl.Forms,
+    Vcl.Dialogs,
+    Xml.xmldom,
+    Xml.XMLIntf,
+    Xml.XMLDoc,
+    Vcl.StdCtrls,
+    System.StrUtils,
+    Data.DB,
+    Datasnap.DBClient,
+    Vcl.ExtCtrls,
+    Vcl.ComCtrls;
+
+type
+  TForm15 = class(TForm)
+    MemoErro: TMemo;
+    btnTestar: TButton;
+    XMLDocument1: TXMLDocument;
+    btnLimpar: TButton;
+    btnFechar: TButton;
+    Label1: TLabel;
+    memoTodosOsErros: TMemo;
+    Label2: TLabel;
+    procedure btnTestarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
+    procedure btnFecharClick(Sender: TObject);
+  private
+   // function ProcurarCampo(sMemoerro : String): String;
+    function procurarErro(sMemoerro: String): String;
+   // function procurarTag(sMemoErro: String): String;
+    { Private declarations }
+  public
+    { Public declarations }
+   end;
+
+  var
+   Form15: TForm15;
+
+  implementation
+
+{$R *.dfm}
+{$region 'Procedures'}
+procedure TForm15.btnFecharClick(Sender: TObject);
+begin
+   Close;
+end;
+
+procedure TForm15.btnTestarClick(Sender: TObject);
+var
+   sErroGerado : String;
+begin
+   sErroGerado := MemoErro.Lines.Text;
+   MessageDlg(procurarErro(sErroGerado)
+   //ProcurarCampo(sErroGerado)+ #13+
+   //procurarTag(sErroGerado)
+   ,mtinformation,[mbOk],0);
+end;
+
+procedure TForm15.btnLimparClick(Sender: TObject);
+begin
+   MemoErro.Lines.Text:= '';
+end;
+
+procedure TForm15.FormCreate(Sender: TObject);
+begin
+   XMLDocument1.LoadFromFile('C:\Users\Bsoft\Desktop\Recuperado\Erros.xml');
+   XMLDocument1.Active := true;
+end;
+{$endregion}
+{$region 'Functions'}
+
+
+function TForm15.procurarErro(sMemoerro: String): String;
+//Identifica o tipo de erro e caso o memo com os erros contenha o mesmo texto da XML
+//Retorna uma solução mais "genérica"
+var
+   xmlNoErro   : IXMLNode;
+   i           : integer;
+   sTipoDeErro : String;
+
+begin
+   xmlNoErro := XMLDocument1.ChildNodes.FindNode('ErrosTratados').ChildNodes.FindNode('Campos');
+
+   for I := 0 to xmlNoErro.ChildNodes.Count -1 do
+   begin
+      xmlNoErro.Childnodes.FindNode('nomeCampo').ChildNodes.FindNode('nome').text;
+      if sMemoerro.Contains(xmlNoErro.Childnodes[i].ChildNodes[0].text) then
+          sTipoDeErro :=  xmlNoErro.Childnodes[i].ChildNodes[1].text;
+          continue
+   end;
+   result := sTipoDeErro;
+end;
+
+//function TForm15.ProcurarCampo(sMemoerro : String): String;
+////Após encontrar o erro, busca o campo em que ele ocorreu
+//var
+//   xmlNoDoCampo : IXMLNode;
+//   i            : integer;
+//   sNomeDoCampo : String;
+//
+//begin
+//   xmlNoDoCampo := XMLDocument1.ChildNodes.FindNode('ErrosTratados').ChildNodes.FindNode('Erros');
+//   for I := 0 to xmlNoDoCampo .ChildNodes.Count -1 do
+//   begin
+//      xmlNoDoCampo .Childnodes.FindNode('nomeErro').ChildNodes.FindNode('nome').text;
+//   if sMemoerro.Contains( xmlNoDoCampo .Childnodes[i].ChildNodes[0].text) then
+//      sNomeDoCampo:= xmlNoDoCampo .Childnodes[i].ChildNodes[1].text ;
+//   end;
+//   result :=  sNomeDoCampo;
+//end;
+//
+//function TForm15.procurarTag(sMemoErro : String): String;
+////Apos detectar erro e campo, busca nas tags algum complemento,
+////caso não encontre retorna mensagem "genérica" solicitando  corrigir o campo encontrado anteriormente
+//var
+//   xmlNoDaTag : IXMLNode;
+//   sConteudo    : String;
+//   i          : integer;
+//begin
+//   xmlNoDaTag := XMLDocument1.ChildNodes.FindNode('ErrosTratados').ChildNodes.FindNode('Tags');
+//
+//   for I := 0 to xmlNoDaTag.ChildNodes.Count -1 do
+//   begin
+//      xmlNoDaTag.Childnodes.FindNode('nomeTag').ChildNodes.FindNode('nome').text;
+//   if sMemoerro.Contains(xmlNoDaTag.Childnodes[i].ChildNodes[0].text) then
+//      begin
+//         sConteudo := xmlNoDaTag.Childnodes[i].ChildNodes[1].text ;
+//         break;
+//      end
+//   else
+//   sConteudo := 'Complemento: O campo citado acima deve ser preenchido corretamente!';
+//   end;
+//   result:=sConteudo;
+//end;
+//{$endregion}
+end.

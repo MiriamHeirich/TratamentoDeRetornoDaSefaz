@@ -1,0 +1,533 @@
+object Form15: TForm15
+  Left = 0
+  Top = 0
+  Width = 1085
+  Height = 854
+  AutoScroll = True
+  Caption = 'Form15'
+  Color = 3618617
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 560
+    Top = 8
+    Width = 120
+    Height = 23
+    Caption = 'Testar solu'#231#227'o'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 8
+    Width = 116
+    Height = 23
+    Caption = 'Erros gerados'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object MemoErro: TMemo
+    Left = 552
+    Top = 37
+    Width = 505
+    Height = 708
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      '                            '
+      '             ')
+    ParentFont = False
+    TabOrder = 0
+  end
+  object btnTestar: TButton
+    Left = 40
+    Top = 767
+    Width = 273
+    Height = 38
+    Caption = 'TESTAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnTestarClick
+  end
+  object btnLimpar: TButton
+    Left = 407
+    Top = 767
+    Width = 273
+    Height = 38
+    Caption = 'LIMPAR '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnLimparClick
+  end
+  object btnFechar: TButton
+    Left = 763
+    Top = 767
+    Width = 270
+    Height = 38
+    Caption = 'FECHAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnFecharClick
+  end
+  object MemoTodosOsErros: TMemo
+    Left = 24
+    Top = 37
+    Width = 505
+    Height = 708
+    Lines.Strings = (
+      ''
+      ''
+      ''
+      '*********************Erros Da Planilha************************'
+      ''
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do CT-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- 27-> Falha na valida'#231#227'o dos dados do Conhecimento: 27'
+      #39'teste'#39' violates pattern constraint of '#39'[^@]+@[^\.]+\..+'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}email'#39' with val' +
+        'ue '#39'teste'#39' failed to '
+      'parse.'
+      '---------------------------'
+      ''
+      ''
+      'Falha na valida'#231#227'o do Modal do Conhecimento: 3'
+      ''
+      #39#39' violates pattern constraint of '#39'[0-9]{8}|ISENTO'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}RNTRC'#39' with val' +
+        'ue '#39#39' failed to parse.'
+      ''
+      '-----------------------------------------------'
+      ''
+      ''
+      ''
+      '&OK'
+      '--------------------------'
+      '---------------------------'
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do CT-e n'#227'o p'#244'de ser realizada.'
+      
+        'Mensagem de erro: Falha na valida'#231#227'o dos dados do Conhecimento: ' +
+        '27'
+      
+        'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"><d' +
+        'est> ID:'
+      
+        '#182/xNome(Raz'#227'o Social ou Nome) - Tamanho maior que o m'#225'ximo pe' +
+        'rmitido [5M '
+      'COMERCIO ATACADISTA E '
+      'VAREJISTAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK].'
+      #39'5M COMERCIO ATACADISTA E '
+      
+        'VAREJISTAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK'#39' violates maxLengt' +
+        'h '
+      'constraint of '#39'60'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}xNome'#39' with val' +
+        'ue '#39'5M COMERCIO '
+      'ATACADISTA E VAREJISTAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK'#39' '
+      'failed to parse.'
+      '---------------------------'
+      '---------------------------'
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do CT-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- 28-> Falha na valida'#231#227'o dos dados do Conhecimento: 28'
+      
+        'Element '#39'{http://www.portalfiscal.inf.br/cte}infDoc'#39' cannot be e' +
+        'mpty according to the '
+      'DTD/Schema.'
+      '---------------------------'
+      '&OK'
+      '--------------------------'
+      'A opera'#231#227'o de Envio do MDF-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '-'
+      'Falha na valida'#231#227'o do Modal do Manifesto: 2543'
+      
+        'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"><i' +
+        'nfModal '
+      
+        'versaoModal="3.00"><rodo><infANTT><infCIOT> ID:#05/CIOT(C'#243'digo I' +
+        'dentificador '
+      'da '
+      
+        'Opera'#231#227'o de Transporte) - Tamanho maior que o m'#225'ximo permitido [' +
+        '165.013.530.793].'
+      #39'165.013.530.793'#39' viola a restri'#231#227'o pattern de '#39'[0-9]{12}'#39'.'
+      
+        'Falha da an'#225'lise do elemento '#39'{http://www.portalfiscal.inf.br/md' +
+        'fe}CIOT'#39' com valor '
+      #39'165.013.530.793'#39'.'
+      '---------------------------'
+      '&OK'
+      '---------------------------'
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do MDF-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- '
+      'Falha na valida'#231#227'o do Modal do Manifesto: 20'
+      
+        'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"><i' +
+        'nfModal '
+      
+        'versaoModal="3.00"><rodo><veicTracao><prop> ID:#16/UF(C'#243'digo do ' +
+        'UF (Unidade '
+      'da Federa'#231#227'o)) - Nenhum valor informado.'
+      
+        'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"><i' +
+        'nfModal '
+      
+        'versaoModal="3.00"><rodo><veicTracao><prop> ID:#16/UF(Sigla da U' +
+        'F) - '
+      'Conte'#250'do '
+      'inv'#225'lido.'
+      
+        #39#39' violates enumeration constraint of '#39'AC AL AM AP BA CE DF ES G' +
+        'O MA MG MS MT '
+      'PA PB PE PI PR RJ RN RO RR RS SC SE SP TO EX'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/mdfe}UF'#39' with value' +
+        ' '#39#39' failed to parse.'
+      '---------------------------'
+      '&OK'
+      '--------------------------'
+      '---------------------------'
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do MDF-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- '
+      'Falha na valida'#231#227'o do Modal do Manifesto: 21'
+      
+        'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"><i' +
+        'nfModal '
+      
+        'versaoModal="3.00"><rodo><veicTracao> ID:#06a/RENAVAM(RENAVAM) -' +
+        ' Tamanho '
+      'menor que o m'#237'nimo permitido [99].'
+      #39'99'#39' violates minLength constraint of '#39'9'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/mdfe}RENAVAM'#39' with ' +
+        'value '#39'99'#39' failed to '
+      'parse.'
+      '---------------------------'
+      '&OK'
+      '-------------------------'
+      '---------------------------'
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do MDF-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- '
+      'Falha na valida'#231#227'o dos dados do Manifesto: 21'
+      
+        #39'1899-12-30T00:00:00-03:00'#39' violates pattern constraint of '#39'(((2' +
+        '0(([02468][048])|'
+      '([13579]'
+      
+        '[26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1' +
+        '\d)|(2[0-8])))|((((0'
+      '[13578])|'
+      '(1...'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/mdfe}dhEmi'#39' with va' +
+        'lue '#39'1899-12-'
+      '30T00:00:'
+      '00-03:00'#39' failed to parse.'
+      
+        'CT-e Rejei'#231#227'o sem endere'#231'o de destino parte 2 "A opera'#231#227'o de Env' +
+        'io do CT-e n'#227'o '
+      'p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- 1609-> Falha na valida'#231#227'o dos dados do Conhecimento: 1609'
+      
+        'TAG:<infModal versaoModal=""3.00""><infModal versaoModal=""3.00"' +
+        '"><ide> ID:'
+      
+        '#030/cMunFim(C'#243'digo do Munic'#237'pio onde o CT-e est'#225' sendo emitido)' +
+        ' - Conte'#250'do '
+      'inv'#225'lido.'
+      
+        'TAG:<infModal versaoModal=""3.00""><infModal versaoModal=""3.00"' +
+        '"><ide> ID:'
+      '#031/xMunFim(Nome do Munic'#237'pio) - Nenhum valor informado.'
+      
+        'TAG:<infModal versaoModal=""3.00""><infModal versaoModal=""3.00"' +
+        '"><ide> ID:'
+      '#032/UFFim(Sigla da UF) - Nenhum valor informado.'
+      
+        'TAG:<infModal versaoModal=""3.00""><infModal versaoModal=""3.00"' +
+        '"><ide> ID:'
+      '#032/UFFim(Sigla da UF) - Conte'#250'do inv'#225'lido.'
+      
+        #39#39' viola a restri'#231#227'o pattern de '#39'[!-'#255']{1}[ -'#255']{0,}[!-'#255']{1}|[!-'#255']' +
+        '{1}'#39'.'
+      
+        'Falha da an'#225'lise do elemento '#39'{http://www.portalfiscal.inf.br/ct' +
+        'e}xMunFim'#39' com valor '#39#39'.'
+      '---------------------------'
+      '&OK'
+      '--------------------------'
+      
+        'Carta de corre'#231#227'o Erro carta de corre'#231#227'o "----------------------' +
+        '-----'
+      'Controle de Transportadoras'
+      '---------------------------'
+      
+        'Ocorreu um erro na gera'#231#227'o da Carta de Corre'#231#227'o Eletr'#244'nica (CC-e' +
+        ').'
+      
+        'Mensagem de erro: Falha na valida'#231#227'o dos dados do Evento: '#39'NF-e ' +
+        '37091 - Cavalo: '
+      
+        'BCJ2J08 Carreta: AUQ0231/;VAGNER CARDOSO RODRIGUES (00843953039)' +
+        ' - '
+      
+        'Gerenciamento de risco: 254086;INCLU...'#39' viola a restri'#231#227'o maxLe' +
+        'ngth de '#39'500'#39'.'
+      
+        'Falha da an'#225'lise do elemento '#39'{http://www.portalfiscal.inf.br/ct' +
+        'e}valorAlterado'#39' com '
+      
+        'valor '#39'NF-e 37091 - Cavalo: BCJ2J08 Carreta: AUQ0231/;VAGNER CAR' +
+        'DOSO '
+      
+        'RODRIGUES (00843953039) - Gerenciamento de risco: 254086;INCLU..' +
+        '.'#39'.'
+      '---------------------------'
+      '&OK'
+      '--------------------------- '
+      '---------------------------'
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do CT-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- 237-> Falha na valida'#231#227'o do Modal do Conhecimento: 237'
+      
+        'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"><i' +
+        'de> ID:'
+      
+        '#008/natOp(Descri'#231#227'o da Natureza da Opera'#231#227'o) - Nenhum valor inf' +
+        'ormado.'
+      
+        'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"><e' +
+        'mit> ID:'
+      '#099/IE(Inscri'#231#227'o Estadual) - Nenhum valor informado.'
+      'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"'
+      
+        '><infCTeNorm><infModal versaoModal="3.00"><rodo> ID:#02/RNTRC(Re' +
+        'gistro '
+      
+        'Nacional de Transportadores Rodovi'#225'rios de Carga) - Nenhum valor' +
+        ' informado.'
+      #39#39' violates pattern constraint of '#39'[0-9]{8}|ISENTO'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}RNTRC'#39' with val' +
+        'ue '#39#39' failed to parse.'
+      '---------------------------'
+      '&OK'
+      '--------------------------'
+      '---------------------------'
+      'CT-e Pr'#225'tico'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do CT-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- 6935-> Falha na valida'#231#227'o dos dados do Conhecimento: 6935'
+      'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"'
+      
+        '><dest><enderDest> ID:#186/xLgr(Logradouro) - Nenhum valor infor' +
+        'mado.'
+      'TAG:<infModal versaoModal="3.00"><infModal versaoModal="3.00"'
+      
+        '><dest><enderDest> ID:#189/xBairro(Bairro) - Nenhum valor inform' +
+        'ado.'
+      
+        #39#39' viola a restri'#231#227'o pattern de '#39'[!-'#255']{1}[ -'#255']{0,}[!-'#255']{1}|[!-'#255']' +
+        '{1}'#39'.'
+      
+        'Falha da an'#225'lise do elemento '#39'{http://www.portalfiscal.inf.br/ct' +
+        'e}xLgr'#39' com valor '#39#39'.'
+      '---------------------------'
+      '&OK'
+      '--------------------------'
+      '---------------------------'
+      'Controle de Transportadoras'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do CT-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- 9-> Falha na valida'#231#227'o dos dados do Conhecimento: 9'
+      
+        'Element '#39'{http://www.portalfiscal.inf.br/cte}infDoc'#39' cannot be e' +
+        'mpty according to the '
+      'DTD/Schema.'
+      '---------------------------'
+      '&OK'
+      '---------------------------'
+      '---------------------------'
+      'Falha no Envio da NF-e'
+      '---------------------------'
+      'A opera'#231#227'o de Envio da NF-e n'#227'o p'#244'de ser realizada.'
+      'Falha na valida'#231#227'o dos dados da nota: 17'
+      
+        'O elemento '#39'{http://www.portalfiscal.inf.br/nfe}vBCFCPST'#39' '#233' ines' +
+        'perado, de acordo '
+      
+        'com o modelo de conte'#250'do do elemento pai '#39'{http://www.portalfisc' +
+        'al.inf.br/nfe}'
+      'ICMSSN900'#39'.'
+      
+        'Esperado: {http://www.portalfiscal.inf.br/nfe}modBCST, {http://w' +
+        'ww.portalfiscal.inf.'
+      'br/nfe}pCredSN.'
+      '---------------------------'
+      '&OK'
+      '--------------------------'
+      'CT-e Pr'#225'tico'
+      '---------------------------'
+      'A opera'#231#227'o de Envio do CT-e n'#227'o p'#244'de ser realizada.'
+      'Mensagens de erro:'
+      '- 390-> Falha na valida'#231#227'o do Modal do Conhecimento: 390'
+      
+        'TAG:<CTeOS xmlns="http://www.portalfiscal.inf.br/cte" versao="3.' +
+        '00"><infCte '
+      
+        'versao="3.00" Id="CTe3122040629647400010967001000000390100000480' +
+        '0"'
+      
+        '><infModal versaoModal="3.00"><CTeOS xmlns="http://www.portalfis' +
+        'cal.inf.br/cte" '
+      'versao="3.00"><infCte versao="3.00" Id="'
+      
+        'CTe31220406296474000109670010000003901000004800"><infModal versa' +
+        'oModal="'
+      
+        '3.00"><CTeOS xmlns="http://www.portalfiscal.inf.br/cte" versao="' +
+        '3.00"><infCte '
+      
+        'versao="3.00" Id="CTe3122040629647400010967001000000390100000480' +
+        '0"'
+      
+        '><infCTeNorm><infModal versaoModal="3.00"><rodoOS><veic><prop> I' +
+        'D:'
+      
+        '#11/NroRegEstadual(N'#250'mero do Registro Estadual) - Nenhum valor i' +
+        'nformado.'
+      #39#39' violates pattern constraint of '#39'[0-9]{25}'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}NroRegEstadual'#39 +
+        ' with value '#39#39' failed to '
+      'parse.'
+      '---------------------------'
+      'OK'
+      '---------------------------'
+      '-********************Erros do Validador***********************'
+      ''
+      
+        '----------------------------------------------------------------' +
+        '-------------------'
+      'Falha na valida'#231#227'o dos dados do Conhecimento: 3'
+      ''
+      
+        #39#39' violates enumeration constraint of '#39'11 12 13 14 15 16 17 21 2' +
+        '2 23 24 25 26 27 28 29 '
+      '31 32 33 35 41 42 43 50 51 52 53'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}cUF'#39' with value' +
+        ' '#39#39' failed to parse.'
+      
+        '----------------------------------------------------------------' +
+        '--------------------'
+      '-----------------------------------------------'
+      'Falha na valida'#231#227'o dos dados do Conhecimento: 3'
+      ''
+      
+        #39#39' violates pattern constraint of '#39'[!-'#255']{1}[ -'#255']{0,}[!-'#255']{1}|[!-' +
+        #255']{1}'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}natOp'#39' with val' +
+        'ue '#39#39' failed to parse.'
+      ''
+      '-----------------------------------------------'
+      'Falha na valida'#231#227'o dos dados do Conhecimento: 3'
+      ''
+      
+        #39#39' violates pattern constraint of '#39'0|0\.[0-9]{2}|[1-9]{1}[0-9]{0' +
+        ',12}(\.[0-9]{2})?'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}vCarga'#39' with va' +
+        'lue '#39#39' failed to parse.'
+      ''
+      '-----------------------------------------------'
+      ''
+      'Falha na valida'#231#227'o dos dados do Conhecimento: 3'
+      ''
+      #39#39' violates pattern constraint of '#39'[0-9]{1}'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}cDV'#39' with value' +
+        ' '#39#39' failed to parse.'
+      
+        '----------------------------------------------------------------' +
+        '-----------'
+      ''
+      'Falha na valida'#231#227'o dos dados do Conhecimento: 3'
+      ''
+      #39#39' violates pattern constraint of '#39'[0-9]{7}'#39'.'
+      
+        'The element '#39'{http://www.portalfiscal.inf.br/cte}cMunFim'#39' with v' +
+        'alue '#39#39' failed to parse.'
+      ''
+      '-----------------------------------------------')
+    ScrollBars = ssVertical
+    TabOrder = 4
+  end
+  object XMLDocument1: TXMLDocument
+    Active = True
+    Left = 896
+    Top = 88
+  end
+end

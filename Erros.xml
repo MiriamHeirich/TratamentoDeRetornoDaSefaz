@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ErrosTratados>
+        <Campos>
+            <nomeCampo>
+                <nome>email</nome>
+                <descricao>Campo: E-mail</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>xNome</nome>
+                <descricao>Campo: Nome</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>vCarga</nome>
+                <descricao>Campo: Valor da Carga</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>infDoc</nome>
+                <descricao>Campo: Nota Fiscal</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>CIOT</nome>
+                <descricao>Campo: CIOT</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>}RENAVAM</nome>
+                <descricao>Campo: RENAVAM</descricao>
+            </nomeCampo>
+
+             <nomeCampo>
+                <nome>xBairro</nome>
+                <descricao>Campo: Bairro</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>dhEmi</nome>
+                <descricao>Campo: Data de Emissão</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>MunFim</nome>
+                <descricao>Campo: Município de Destino</descricao>
+            </nomeCampo>
+
+             <nomeCampo>
+                <nome>UFIni</nome>
+                <descricao>Campo: Estado de Origem</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>UFFim</nome>
+                <descricao>Campo: Estado de Destino</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>UFEnv</nome>
+                <descricao>Campo: Estado de Envio</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>}UF</nome>
+                <descricao>Campo: Estado</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>MunIni</nome>
+                <descricao>Campo: Município de Origem</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>MunEnv</nome>
+                <descricao>Campo: Município de Envio</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>}valorAlterado</nome>
+                <descricao>Campo: Carta de Correção</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>RNTRC</nome>
+                <descricao>Campo: RNTC</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>xLgr</nome>
+                <descricao>Campo: Bairro </descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>ICMSSN900</nome>
+                <descricao>Erro ao utilizar CSOSN 900</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>NroRegEstadual</nome>
+                <descricao>Campo: Número de Registro Estadual</descricao>
+            </nomeCampo>
+
+             <nomeCampo>
+                <nome>CNPJ</nome>
+                <descricao> Campo: CNPJ</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>CEP</nome>
+                <descricao>Campo: CEP</descricao>
+            </nomeCampo>  
+
+            <nomeCampo>
+                <nome>Pais</nome>
+                <descricao>Campo: País</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>fone</nome>
+                <descricao>Campo:Telefone</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>Mun</nome>
+                <descricao>Campo: Município</descricao>
+            </nomeCampo>
+
+             <nomeCampo>
+                <nome>natOp</nome>
+                <descricao>Campo: Natureza Da Operação</descricao>
+            </nomeCampo>
+
+             <nomeCampo>
+                <nome>cUF</nome>
+                <descricao> Campo: Estado</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+                <nome>vComp</nome>
+                <descricao> Campo: Valor</descricao>
+            </nomeCampo>  
+
+             <nomeCampo>
+                <nome>proPred</nome>
+                <descricao> Campo: Produto predominante</descricao>
+            </nomeCampo>  
+
+            <nomeCampo>
+                <nome>xOutCat</nome>
+                <descricao> Campo: Outras características da carga</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+            <nome>natOp</nome>
+            <descricao>Campo: Natureza Da Operação</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+            <nome>cUF</nome>
+            <descricao> Campo: Estado</descricao>
+            </nomeCampo>
+
+            <nomeCampo>
+            <nome>vCargaAverb</nome>
+            <descricao> Campo: Averbação da Carga</descricao>
+            </nomeCampo> 
+        </Campos>
+
+        <Erros>
+            <nomeErro>
+                <nome>maxLength</nome>                                                                  
+                <descricao>Erro: Excede o tamanho máximo permitido </descricao>
+            </nomeErro>
+
+             <nomeErro>
+                <nome>Nenhum valor informado</nome>
+                <descricao>Erro: Campo vazio.</descricao>
+            </nomeErro>
+
+            <nomeErro>
+                <nome>minLength</nome>
+                <descricao>Erro: Tamanho menor que o mínimo permitido.</descricao>
+            </nomeErro>
+
+            <nomeErro>
+                <nome>cannot be empty</nome>
+                <descricao>Erro: Não pode estar vazio.</descricao>
+            </nomeErro>
+
+            <nomeErro>
+                <nome>violates enumeration constraint of</nome>
+                <descricao>Erro: Dados não informados ou Inválidos</descricao>
+            </nomeErro>
+
+            <nomeErro>
+                <nome>violates pattern constraint of</nome>
+                <descricao>Erro: Dados nulos ou preenchidos incorretamente.</descricao>
+            </nomeErro>
+
+            <nomeErro>
+                <nome>viola a restrição pattern de</nome>
+                <descricao>Erro: Dados não informados ou preenchidos incorretamente.</descricao>
+            </nomeErro>
+
+            <nomeErro>
+                <nome>'[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}'</nome>
+                <descricao>Erro: Dados obrigatórios não preenchidos.</descricao>
+            </nomeErro>
+
+             <nomeErro>
+                <nome>11 12 13 14 15 16 17 21 22 23 24 25 26 27 28 29 31 32 33 35 41 42 43 50 51 52 53'</nome>
+                <descricao>Erro: Campo não preenchido ou está incorreto.</descricao>
+            </nomeErro>
+        </Erros>
+        <Tags>
+            <nomeTag>
+                <nome><![CDATA[<infModal versaoModal="3.00"><infModal versaoModal="3.00"><dest>]]></nome>
+                <descricao>Complemento:  Razão Social do Destinatário</descricao>
+            </nomeTag>
+
+            <nomeTag>
+                <nome><![CDATA[<infModal versaoModal="3.00"><infModal versaoModal="3.00"><infModal versaoModal="3.00"><rodo><infANTT><infCIOT>]]></nome>
+                <descricao>Complemento:  Tamanho maior que o máximo permitido de 12 caracteres</descricao>
+            </nomeTag>
+
+             <nomeTag>
+                <nome><![CDATA[<infModal versaoModal="3.00"><infModal versaoModal="3.00"><infModal versaoModal="3.00"><rodo><veicTracao><prop>]]></nome>
+                <descricao>Complemento:  Do proprietário do veiculo do MDF-e</descricao>
+            </nomeTag>
+
+            <nomeTag>
+                <nome><![CDATA[<infModal versaoModal="3.00"><infModal versaoModal="3.00"><infModal versaoModal="3.00"><rodo><veicTracao>]]></nome>
+                <descricao>Complemento:  Inválido</descricao>
+            </nomeTag>
+
+            <nomeTag>
+                <nome><![CDATA[ '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1...'.]]></nome>
+                <descricao>Complemento: Data não informada</descricao>
+            </nomeTag> 
+
+            <nomeTag>
+                <nome>sem endereço de destino parte 2</nome>
+                <descricao>Complemento: Na Parte 2 do CT-e</descricao>
+            </nomeTag>  
+
+             <nomeTag>
+                <nome><![CDATA[<infModal versaoModal=""3.00""><infModal versaoModal=""3.00""><ide>]]></nome>
+                <descricao>Complemento:  Não informado</descricao>
+            </nomeTag>  
+
+            <nomeTag>
+                <nome><![CDATA[<infModal versaoModal="3.00"><infModal versaoModal="3.00"><infCTeNorm>]]></nome>
+                <descricao>Complemento: Ou sem Proprietário informado no CT-e</descricao>  
+            </nomeTag>
+
+             <nomeTag>
+                <nome>according to the DTD/Schema.</nome>
+                <descricao>Complemento: Sem documento vinculado ao CT-e na Parte 3 - Notas fiscais Transportadas</descricao>   
+            </nomeTag>  
+
+              <nomeTag>
+                <nome>Esperado: {http://www.portalfiscal.inf.br/nfe}modBCST, {http://www.portalfiscal.inf.br/nfe}pCredSN.</nome>
+                <descricao>Complemento:  Confira se os dados de ICMS ST estão nos respectivos campos e tente novamente.</descricao>   
+            </nomeTag>  
+
+            <nomeTag>  
+                <nome><![CDATA[<CTeOS xmlns="http://www.portalfiscal.inf.br/cte" versao="3.00"><infCte ><infModal versaoModal="3.00"><CTeOS xmlns="http://www.portalfiscal.inf.br/cte" versao="3.00">]]></nome>
+                <descricao>Complemento:  Ajustar para a geração CT-eOS</descricao>   
+            </nomeTag> 
+
+            <nomeTag>  
+                <nome>'[^@]+@[^\.]+\..+'.</nome>
+                <descricao>Complemento: Deve seguir o padrão "teste@teste.com" ou "teste@teste.com.br"</descricao>   
+            </nomeTag> 
+
+             <nomeTag>  
+                <nome>'11 12 13 14 15 </nome>
+                <descricao>Complemento: Preencher código UF com os dois dígitos correspondentes</descricao>   
+            </nomeTag>  
+
+            <nomeTag>  
+                <nome>' violates enumeration constraint of 'AC AL AM AP BA CE DF ES GO MA </nome>
+                <descricao>Complemento: Preencher campo conforme o exemplo: 'AC AL AM AP BA CE DF ES GO ...</descricao>   
+            </nomeTag>
+
+             <nomeTag>  
+                <nome>'[0-9]</nome>
+                <descricao>Complemento: Deve ser preenchido com números inteiros de 0 até 9</descricao>   
+            </nomeTag> 
+
+             <nomeTag>  
+                <nome> maxLength de '500</nome>
+                <descricao>Complemento: Observação ultrapassou 500 caracteres, esse é o limite da Carta de Correção</descricao>   
+            </nomeTag>  
+
+             <nomeTag>  
+                <nome>Nenhum valor informado</nome>
+                <descricao>Complemento: Não pode estar vazio</descricao>   
+            </nomeTag>
+        </Tags> 
+
+</ErrosTratados>

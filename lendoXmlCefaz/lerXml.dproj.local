@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/25 11:51:09.000.535,=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Unit15.pas</Transaction>
+    <Transaction>2022/07/25 11:51:39.000.043,C:\Users\Bsoft\Desktop\lendoXmlCefaz\uPrincipal.pas=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Unit15.pas</Transaction>
+    <Transaction>2022/07/25 11:51:39.000.043,C:\Users\Bsoft\Desktop\lendoXmlCefaz\uPrincipal.dfm=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Unit15.dfm</Transaction>
+    <Transaction>2022/07/25 11:51:46.000.106,C:\Users\Bsoft\Desktop\lendoXmlCefaz\lerXml.dproj=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Project13.dproj</Transaction>
+    <Transaction>2022/07/29 09:18:16.000.456,=C:\Users\Bsoft\Desktop\UltimaVersao\lendoXmlCefaz\Unit1.pas</Transaction>
+    <Transaction>2022/07/29 09:18:58.000.086,C:\Users\Bsoft\Desktop\UltimaVersao\lendoXmlCefaz\uInsertErros.pas=C:\Users\Bsoft\Desktop\UltimaVersao\lendoXmlCefaz\Unit1.pas</Transaction>
+    <Transaction>2022/07/29 09:30:03.000.896,C:\Users\Bsoft\Desktop\UltimaVersao\lendoXmlCefaz\uInsertErros.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
